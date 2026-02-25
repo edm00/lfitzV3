@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outfit Builder - Find Your Perfect Vibe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 Outfit Builder</h1>
+            <p class="subtitle">Find the perfect outfit for any vibe</p>
+        </header>
+
+        <div class="search-section">
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    placeholder="Search for a vibe (e.g., 'Date Night', '90s outfits', 'Summer vibes')"
+                >
+                <button id="search-btn">Find Outfits</button>
+            </div>
+            <div class="popular-searches">
+                <span>Popular:</span>
+                <button class="vibe-btn" data-vibe="Date Night">Date Night</button>
+                <button class="vibe-btn" data-vibe="90s outfits">90s Outfits</button>
+                <button class="vibe-btn" data-vibe="Business">Business</button>
+                <button class="vibe-btn" data-vibe="Casual">Casual</button>
+                <button class="vibe-btn" data-vibe="Athleisure">Athleisure</button>
+            </div>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Finding your perfect outfit...</p>
+        </div>
+
+        <div class="results" id="results"></div>
+
+        <div class="outfit-gallery" id="outfit-gallery"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
